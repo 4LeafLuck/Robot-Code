@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83d42b04-8206-49ce-9aa3-9b46017b84e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Robot-Code.iml" afterPath="$PROJECT_DIR$/.idea/Robot-Code.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ftc_app-master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/internal/FtcLionsTeleOp.java" afterPath="$PROJECT_DIR$/ftc_app-master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/internal/FtcLionsTeleOp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ftc_app-master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/internal/FtcOpModeRegister.java" afterPath="$PROJECT_DIR$/ftc_app-master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/internal/FtcOpModeRegister.java" />
     </list>
     <ignored path="Robot-Code.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +27,10 @@
       <file leaf-file-name="FtcOpModeRegister.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ftc_app-master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/internal/FtcOpModeRegister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+            <state relative-caret-position="532">
+              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="false" />
+                <element signature="e#0#3715#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,10 +39,10 @@
       <file leaf-file-name="FtcLionsTeleOp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ftc_app-master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/internal/FtcLionsTeleOp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="94" column="40" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
+            <state relative-caret-position="1432">
+              <caret line="125" column="8" selection-start-line="125" selection-start-column="8" selection-end-line="125" selection-end-column="8" />
               <folding>
-                <element signature="e#0#4537#0" expanded="true" />
+                <element signature="e#0#4768#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,6 +132,7 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Simba-Code" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/basementlions/Desktop/2016 Robotics Desktop/Zaki-Code/ftc_app-master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/internal/FtcOpModeRegister.java" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
@@ -280,7 +280,7 @@
         <state relative-caret-position="555">
           <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#0#3715#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -290,7 +290,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#4537#0" expanded="true" />
+            <element signature="e#0#4768#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -333,20 +333,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ftc_app-master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/internal/FtcOpModeRegister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        <state relative-caret-position="532">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#0#3715#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ftc_app-master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/internal/FtcLionsTeleOp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="94" column="40" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
+        <state relative-caret-position="1432">
+          <caret line="125" column="8" selection-start-line="125" selection-start-column="8" selection-end-line="125" selection-end-column="8" />
           <folding>
-            <element signature="e#0#4537#0" expanded="true" />
+            <element signature="e#0#4768#0" expanded="true" />
           </folding>
         </state>
       </provider>

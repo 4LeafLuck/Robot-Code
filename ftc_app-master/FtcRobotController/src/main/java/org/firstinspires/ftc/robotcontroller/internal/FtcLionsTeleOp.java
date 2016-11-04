@@ -102,16 +102,28 @@ public class FTCLionsTeleOp extends OpMode {
         leftBack.setPower(gamepad1.left_stick_y);
         rightBack.setPower(-gamepad1.right_stick_y);
 
-        while (gamepad1.right_stick_x != 0) {
-            rightFront.setPower(-gamepad1.right_stick_x);
-            rightBack.setPower(gamepad1.right_stick_x);
+        while (gamepad1.right_stick_x != 0) { //right side of robot
+            rightFront.setPower(gamepad1.right_stick_x); //assuming that the right side is backwards
+            rightBack.setPower(-gamepad1.right_stick_x);
 
         }
-        while (gamepad1.left_stick_x != 0) {
+        while (gamepad1.left_stick_x != 0) { //left side of the robot
             leftFront.setPower(gamepad1.left_stick_x);
             leftBack.setPower(-gamepad1.left_stick_x);
         }
 
+
+
+
+
+        ////////////////////////////////
+        //     GAMEPAD 2 CONTROLS     //
+        ////////////////////////////////
+
+
+
+
+        
 
         // E-STOP
         if (gamepad1.left_bumper && gamepad1.right_bumper && gamepad2.left_bumper && gamepad2.right_bumper) { //mash those bumpers
