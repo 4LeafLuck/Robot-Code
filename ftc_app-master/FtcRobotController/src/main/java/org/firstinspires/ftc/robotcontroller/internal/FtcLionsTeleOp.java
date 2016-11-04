@@ -65,11 +65,15 @@ public class FTCLionsTeleOp extends OpMode {
     public void start() {
         started = true;
 
-        leftDrive = hardwareMap.dcMotor.get("leftDrive");
-        rightDrive = hardwareMap.dcMotor.get("rightDrive");
+        leftFront = hardwareMap.dcMotor.get("leftFront");
+        leftBack = hardwareMap.dcMotor.get("leftBack");
+        rightFront = hardwareMap.dcMotor.get("rightFront");
+        leftBack = hardwareMap.dcMotor.get("leftBack");
 
-        leftDrive.setMode(DcMotorController.RunMode.RUN_USING_ENCODERS);
-        rightDrive.setMode(DcMotorController.RunMode.RUN_USING_ENCODERS);
+        leftFront.setMode(DcMotorController.RunMode.RUN_USING_ENCODERS);
+        rightFront.setMode(DcMotorController.RunMode.RUN_USING_ENCODERS);
+        leftBack.setMode(DcMotorController.RunMode.RUN_USING_ENCODERS);
+        rightBack.setMode(DcMotorController.RunMode.RUN_USING_ENCODERS);
     }
 
     @Override
@@ -85,27 +89,37 @@ public class FTCLionsTeleOp extends OpMode {
             telemetry.addData("****Controller Data****");
             telemetry.addData("Gamepad1 Movement: y", gamepad1.right_stick_y, ", x", gamepad1.right_stick_x);
             telemetry.addData("Gamepad2 Movement: y", gamepad2.right_stick_y, ", x", gamepad2.right_stick_x);
-
-            if (gamepad1.x) {
-            }
         }
 
-            ////////////////////////////////
-            //     GAMEPAD 1 CONTROLS     //
-            ////////////////////////////////
-
-            // TANK DRIVE
-            leftDrive.setPower(gamepad1.right_stick_y);
-            rightDrive.setPower(-gamepad1.left_stick_y);
+        ////////////////////////////////
+        //     GAMEPAD 1 CONTROLS     //
+        ////////////////////////////////
 
 
-            // E-STOP
-            if (gamepad1.left_bumper && gamepad1.right_bumper && gamepad2.left_bumper && gamepad2.right_bumper) { //mash those bumpers
-                leftDrive.setPower(0);
-                rightDrive.setPower(0);
-            }
+        // TANK DRIVE \\
+        leftFront.setPower(gamepad1.left_stick_y);
+        rightFront.setPower(-gamepad1.right_stick_y);
+        leftBack.setPower(gamepad1.left_stick_y);
+        rightBack.setPower(-gamepad1.right_stick_y);
+
+        while (gamepad1.right_stick_x != 0) {
+            rightFront.setPower(-gamepad1.right_stick_x);
+            rightBack.setPower(gamepad1.right_stick_x);
+
+        }
+        while (gamepad1.left_stick_x != 0) {
+            leftFront.setPower(gamepad1.left_stick_x);
+            leftBack.setPower(-gamepad1.left_stick_x);
+        }
+
+
+        // E-STOP
+        if (gamepad1.left_bumper && gamepad1.right_bumper && gamepad2.left_bumper && gamepad2.right_bumper) { //mash those bumpers
+            leftDrive.setPower(0);
+            rightDrive.setPower(0);
         }
     }
+}
 
     @Override
     public void stop() {
